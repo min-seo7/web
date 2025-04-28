@@ -11,10 +11,10 @@
 function max(num1, num2) {
     if (num1 > num2) {
         console.log(`두 개의 수 중에서 큰 값은 ${num1} 입니다.`);
-    } else if (num1 = num2) {
-        console.log(`두 개의 수는 동일합니다.`);
-    } else {
+    } else if (num1 < num2) {
         console.log(`두 개의 수 중에서 큰 값은 ${num2} 입니다.`);
+    } else {
+        console.log(`두 개의 수는 동일합니다.`);
     }
 }
 max(1, 3);

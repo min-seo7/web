@@ -1,7 +1,7 @@
 //variable4.js
 //연산자(할당연산자 524p)
 
-let num1 = "10";
+let num1 = "10";   // ""안에 넣으면 str타입
 num1 = num1 + "20";     //"1020" 
 num1 = num1 + "30";     //"102030"
 console.log(num1);

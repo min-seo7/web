@@ -1,6 +1,6 @@
 //condition3.js
 // 30 ~ 100 사이의 점수.
-let result = 30 + Math.floor(Math.random() * 71); //0 <= x < 71
+let result = 30 + Math.floor(Math.random() * 71); //30 <= x < 100, Math.random() * 71은 0부터 71미만의 수를 생성.
 console.log(result);
 
 // 100 ~ 90 => "A"
