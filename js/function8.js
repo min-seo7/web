@@ -12,8 +12,8 @@ console.clear(); //로그지우기.
 //button<삭제> 템플릿.    /// deleteTr 함수만들기! 
 let btnTemplate = "<button class='btn btn-danger' onclick='deleteTr(event)'>삭제</button>";    //tr생성함수 뒷자리에 붙일것.   
 
-function deleteTr() {
-    
+function deleteTr(del) {
+    del.target.parentElement.parentElement.remove();
 }
 
 
