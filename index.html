@@ -17,16 +17,27 @@
     <!--HTML 주석문.-->
     <div id="show">
           <!-- input#uservalue #은 id=""를 의미함   -->
-        <input type="text" id="userValue" value="민규">
+        성별<input type="text" id="userValue">
+        <button id="searchBtn"class="btn btn-primary">조회</button>   <!--button의 이벤트:click-->
+        <select id = "selectGender">   <!--드롭다운 기능--><!--slect의 이벤트:change// select는 option으로 value를 갖고있어야.-->
+            <option value = "All">전체</option>
+            <option value = "Male">남자</option>
+            <option value = "Female">여자</option>
+        </select>
         <p>
-            <input type="text" id="num1" value="30"> +
+            <!-- <input type="text" id="num1" value="30"> +
             <input type="text" id="num2" value="17"> =
-            <input type="text" id="result">
+            <input type="text" id="result"> -->
         </p>
         </div>
 
-    <script src="js/funtion3exe.js"></script>
+    <script src="js/jsondata.js"></script>
+    <script src="js/function8.js"></script>
    
 </body>
 
 </html>
+
+
+
+<!--드롭다운, 버튼-->

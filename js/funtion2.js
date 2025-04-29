@@ -21,7 +21,7 @@ console.log(sum(10)); //함수에 초기값이 정의되어, 2번째 매개변�
 
 
 //구구단을 출력하는 함수.
-function printGugudan(dan = 2) {
+function printGugudan(dan = 2) {      // n단을 입력받아 구구단. 
     for (let i = 1; i <= 9; i++) {
         document.write(`<p>${dan} X ${i} = ${dan * i}</p>`);
     }

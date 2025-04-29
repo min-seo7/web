@@ -5,9 +5,6 @@
 
 
 
-
-
-
 function max(num1, num2) {
     if (num1 > num2) {
         console.log(`두 개의 수 중에서 큰 값은 ${num1} 입니다.`);
@@ -20,8 +17,6 @@ function max(num1, num2) {
 max(1, 3);
 max(2, 1);
 max(3, 3);
-
-
 
 
 function sumUptp(n) {
