@@ -16,7 +16,7 @@
         // age = 30; // 30할당. const변수는 변경x.
 
         //선택자(selector)
-        let item = document.querySelector('#userValue');   //id값이 uservalue인 값을 찾아옴~
+        let item = document.querySelector('#userValue').value;   //id값이 uservalue인 값을 찾아옴~
         console.dir(item);
         name = item.value; //name에 item의 vlaue 담긴 값을 변경. item은 userVlaue의 id를 갖고있음. 
-        console.log(name); //name에 김민수에서 김민규로 값이 바뀜. 
+        console.log(name); //name에 김민수에서 민규로 값이 바뀜. 

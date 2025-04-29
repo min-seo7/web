@@ -3,6 +3,7 @@
 /* js는 값이 할당되는 시점에 변수타입 결정됨.(느슨함) */ //cf) java는 선언시 타입지정 int num1;
 
 let num1 = 100; //숫자타입
+console.log(typeof num1);
 num1 = "hundred";
 console.log(typeof num1);
 
@@ -49,6 +50,6 @@ console.log(person.name);       //person의 속성중 name만!
 
 //undefied, null 
 let WhatIsThis;      //선언만 되어있으면 undefined. 상태임
-WhatIsThis = document.querySelector('#userVal');  //uservla을 whatisthis에 넣음
+WhatIsThis = document.querySelector('#userValue').value;  //uservalue의 vlaue값을 을 whatisthis에 넣음// .value가 없으면 html 그 아이디 전체요소를 가지고옴.
 console.log(WhatIsThis);    //whatistish는 선언만 되어있어 null 값임. 
 console.log(typeof WhatIsThis);     //null의 데이터 유형은 object.

@@ -2,7 +2,7 @@
 // 1 ~ 10 임의의 값을 생성하고, 
 // 생성된 값을 변수에 저장한 후 2의 배수 또는 3의 배수 2, 3의 배수가 아님. 
 
-let num1 = 1 + Math.floor(Math.random() * 10);
+let num1 = 1 + Math.floor(Math.random() * 10);    // Math. random은 0부터 10미만인 9까지 생성. 
 console.log(num1);
 
 
