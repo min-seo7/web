@@ -9,13 +9,13 @@ console.clear(); //로그지우기.
 
 
 
-//button<삭제> 템플릿.    /// deleteTr 함수만들기! 
+//button<삭제> 템플릿.   
 let btnTemplate = "<button class='btn btn-danger' onclick='deleteTr(event)'>삭제</button>";    //tr생성함수 뒷자리에 붙일것.   
 
+/// 삭제함수.
 function deleteTr(del) {
-    del.target.parentElement.parentElement.remove();
-}
-
+    del.target.parentElement.parentElement.remove();     
+}  
 
 
 
@@ -53,7 +53,7 @@ document.querySelector('select#selectGender').addEventListener('change', functio
             list += makeTr(emp);
         } 
     }
-    document.querySelector('table.table>tbody').innerHTML = list;
+    document.querySelector('table.table>tbody').innerHTML = list;   //table.table>tbody css선택자
 }); 
 
 
@@ -73,7 +73,7 @@ function makeTr(emp = {}) {
 }
 
 
-
+//속성정의.
 let fields = ['id', 'first_name', 'gender','email', 'salary'];      //firelds배열을 선언하고, [id, first_name, email] 배열의 속성정의.
 
 //사원목록(table형식)을 출력.
