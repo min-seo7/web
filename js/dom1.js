@@ -1,5 +1,8 @@
 //dom1.js
 //createElement(), appendChild(), setAttribute(), querySelector()
+//변수생성해서, dom요소에 접근. 이벤트&기능넣기! 
+
+
 
 
 //사과 2000원을 js를 사용해서 html문서에 넣기
@@ -23,7 +26,7 @@ document.querySelector('ul').appendChild(li);    //li를 만들고, ul을 찾아
 
 
 //이벤트!!!! 리스트등록버튼 
-document.querySelector('#addBtn').addEventListener('click', addcallback);
+document.querySelector('#addBtn').addEventListener('click', addcallback);   //addEven~(이벤트종류, 익명함수) 
 
 function addcallback() {
     let fruit = document.getElementById('fruit').value; //getElementBy__은 아이디값만 넣으면됨 '#'제외. [Id, ClassNAme, TagName]
@@ -46,8 +49,8 @@ function addcallback() {
 
 function createLi(fruitName, furitPrice) {
     let li = document.createElement("li");
-    let sp1 = document.createElement("span");
-    sp1.innerText = fruitName;
+    let sp1 = document.createElement("span");    //sp1에 span을 넣고
+    sp1.innerText = fruitName;                     //sp1의 innertext로 매개변수로 받은 과일이름 넣기.
     let sp2 = document.createElement("span");
     sp2.innerText = furitPrice + "원";
     let txt = document.createTextNode(" ");
