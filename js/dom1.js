@@ -15,7 +15,7 @@ li.appendChild(txt);
 li.appendChild(sp2);
 
 console.log(li);
-document.querySelector('ul').appendChild(li);
+document.querySelector('ul').appendChild(li);    //li를 만들고, ul을 찾아서 appendchild를 함. 만약 ul요소가 많다면 아이디나 클래스 지정해서 선택. 
 
 
 
@@ -26,7 +26,7 @@ document.querySelector('ul').appendChild(li);
 document.querySelector('#addBtn').addEventListener('click', addcallback);
 
 function addcallback() {
-    let fruit = document.getElementById('fruit').value; //아이디값만 넣으면됨 '#'제외.
+    let fruit = document.getElementById('fruit').value; //getElementBy__은 아이디값만 넣으면됨 '#'제외. [Id, ClassNAme, TagName]
     let price = document.querySelector('#price').value;
 
     //입력값이 있는지 체크.
@@ -56,6 +56,14 @@ function createLi(fruitName, furitPrice) {
     li.appendChild(txt);
     li.appendChild(sp2);
     li.appendChild(btn);   //배치순서도 중요!  가격, 금액, 삭제버튼 순서.
+
+    li.addEventListener('mouseover',function(){
+        li.style.background = "pink";
+    })
+
+    li.addEventListener('mouseout',function(){
+        li.style.background = "none";
+    })
 
     return li; // 함수가 호출된 곳으로 li 반환.
 }

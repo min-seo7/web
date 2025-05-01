@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>000</title>
+<style>
+   *{
+    box-sizing: border-box;
+    font-family: "맑은고딕", "굴림", "고딕";
+   }
+   #container{
+    width: 1000px;
+    margin: 0 auto;    /*중앙배치*/
+    text-align: center;
+   }
+   header{
+    text-align: center;
+    font-weight: bold;
+   }
+   nav{
+    background-color: #000;
+    overflow: hidden;           /*하위 메뉴float때문*/
+    padding-bottom: 15px;
+   }
+   nav ul{
+    list-style: none;
+   }
+   nav li{
+    float:left;
+   }
+   nav li:last-child{     /*네비메뉴 한영역만 따로*/
+    float: right;
+   }
+   nav a{                   /*링크 밑줄*/
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+   }
+   a:hover{                 /*마우스 올리면 색변경*/
+    background-color: yellow;
+    color: #000;
+   }
+   #left{
+    width: 200px;
+    height: 500px;
+    float: left;
+    background-color: aquamarine;
+   }
+   section{
+    width: 600px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    text-align: center;  
+   }
+   #right{
+    width: 200px;
+    height: 500px;
+    float: right;
+    background-color: aquamarine;
+   }
+   footer{
+    background-color: bisque;
+    clear: both;
+    padding: 30px;
+   }
+
+
+
+   form{
+    width: 500px;
+    background-color: #ddd;
+    margin: 0 auto;    /*섹션 내 요소들 중앙배치 */
+    padding-top: 20px;
+   }
+   fieldset{
+    border: none;
+   }
+   .ps legend{
+    font-weight: bold;
+   }
+   .ps ul{
+    list-style: none;
+   }
+   .ps li{
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+   }
+   .ps label{
+    display: inline-block;
+    text-align: left;
+    width: 130px;
+    font-weight: bold;
+   }
+   .ps input{
+    width: 250px;
+    padding: 3px;
+   }
+   button{
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fef;
+    padding: 15px;
+    font-weight: bold;
+   }
+   
+
+
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>OOO페이지에 온 것을 환영합니다.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">메인메뉴</a></li>
+                    <li><a href="#">메인메뉴</a></li>
+                    <li><a href="#">메인메뉴</a></li>
+                    <li><a href="#">공지사항</a></li>     <!--nav li:last-child-->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <aside id="left">
+                <h3>좌측 사이드</h3>
+            </aside>
+            <section>
+                <h2>회원가입 영역입니다</h2>
+               <form action="join.js" method="post" name="join">
+                    <fieldset class="ps">
+                        <legend>개인정보 등록</legend>
+                        <ul>
+                            <li>
+                                <label for="id">계정아이디</label>
+                                <input type="text" id="id" name="id" autofocus>
+                            </li>  
+                            <li>
+                                <label for="pass">비밀번호</label>
+                                <input type="password" id="pass" name="pass">
+                            </li>
+                            <li>
+                                <label for="pass">비밀번호 확인</label>
+                                <input type="password" id="pass" name="pass">
+                            </li>
+                            <li>
+                                <label for="name">이름</label>
+                                <input type="text" id="name" name="name" placeholder="5자 미만 공백없이">
+                            </li> 
+                            <li>
+                                <label for="phone">전화번호</label>
+                                <input type="tel" id="phone" name="phone">
+                            </li>                            
+                        </ul>                        
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit">회원가입</button>
+                        <button type="reset">다시작성</button>
+                    </fieldset>
+               </form>
+            </section>
+            <aside id="right">
+                <h3>우측 사이드</h3>
+            </aside>
+        </main>
+        <footer>
+            <h2>푸터 영역입니다.</h2>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 //function7.js     [for-in, for-of 사용!!!!!]
-console.log(friends);
 
 
 

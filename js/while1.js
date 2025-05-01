@@ -11,7 +11,7 @@ for(let i = 1; i <= 10; i++){
 // for는 조건식을 통해 반복횟수 지정가능. while은 조건만족여부로 반복을 결정.
 let no = 1;
 while(1) {
-    if(no % 2)  {           //나머지 0이면 false, 1이면 true.
+    if(no % 2 == 0)  {           //나머지 0이면 false, 1이면 true.
         console.log(no);
     }
     no++;   //증감.
