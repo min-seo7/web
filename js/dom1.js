@@ -1,5 +1,5 @@
 //dom1.js
-//createElement(), appendChild(), setAttribute(), querySelector()
+//createElement(), appendChild(), setAttribute(), querySelector(), querySelectorAll()
 //변수생성해서, dom요소에 접근. 이벤트&기능넣기! 
 
 
@@ -58,7 +58,7 @@ function createLi(fruitName, furitPrice) {
     li.appendChild(sp1);
     li.appendChild(txt);
     li.appendChild(sp2);
-    li.appendChild(btn);   //배치순서도 중요!  가격, 금액, 삭제버튼 순서.
+    li.appendChild(btn);   //배치순서도 중요!
 
     li.addEventListener('mouseover',function(){
         li.style.background = "pink";
